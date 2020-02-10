@@ -1,0 +1,8 @@
+---
+applications:
+- name: address-manager-application
+  memory: 1024M
+  host: address-manager-application
+  domain: cfapps.eu10.hana.ondemand.com
+  env:
+    JAVA_OPTS: "-agentlib:jdwp=transport=dt_socket,address=8686,server=y,suspend=n"
